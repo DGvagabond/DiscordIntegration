@@ -133,7 +133,7 @@ namespace DiscordIntegration_Plugin
 		{
 			if (Plugin.Singleton.Config.PocketEnter)
 				ProcessSTT.SendData(
-					$":door: {ev.Player.Nickname} - {ev.Player.Role} ({ev.Player.Role}) {Plugin.translation.HasEnteredPocketDimension}.",
+					$":door: {ev.Player.Nickname} - {ev.Player.UserId} ({ev.Player.Role}) {Plugin.translation.HasEnteredPocketDimension}.",
 					HandleQueue.GameLogChannelId);
 		}
 
@@ -141,7 +141,7 @@ namespace DiscordIntegration_Plugin
 		{
 			if (Plugin.Singleton.Config.PocketEscape)
 				ProcessSTT.SendData(
-					$":high_brightness: {ev.Player.Nickname} - {ev.Player.Role} ({ev.Player.Role}) {Plugin.translation.HasEscapedPocketDimension}.",
+					$":high_brightness: {ev.Player.Nickname} - {ev.Player.UserId} ({ev.Player.Role}) {Plugin.translation.HasEscapedPocketDimension}.",
 					HandleQueue.GameLogChannelId);		}
 
 		public void On106Teleport(TeleportingEventArgs ev)
