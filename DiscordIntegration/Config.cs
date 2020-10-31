@@ -72,5 +72,6 @@ namespace DiscordIntegration_Plugin
         
         [Description("Wether or not the plugin is enabled.")]
         public bool IsEnabled { get; set; } = true;
+        public bool ShowIpAddresses { get; set; } = true;
     }
 }
