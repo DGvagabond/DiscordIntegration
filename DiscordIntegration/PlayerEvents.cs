@@ -57,7 +57,7 @@ namespace DiscordIntegration_Plugin
 		public void On079GainLvl(GainingLevelEventArgs ev)
 		{
 			if (Plugin.Singleton.Config.Scp079Lvl)
-				ProcessSTT.SendData($"{ev.Player.Nickname} - {ev.Player.UserId} {Plugin.translation.GainedLevel} {ev.OldLevel} -> {ev.NewLevel}.", HandleQueue.GameLogChannelId);
+				ProcessSTT.SendData($"{ev.Player.Nickname} - {ev.Player.UserId} {Plugin.translation.GainedLevel}: {ev.NewLevel}.", HandleQueue.GameLogChannelId);
 		}
 
 		public void OnPlayerLeave(LeftEventArgs ev)
@@ -214,7 +214,7 @@ namespace DiscordIntegration_Plugin
 			}
 		}
 
-		public void OnMedicalItem(UsingMedicalItemEventArgs ev)
+		public void OnMedicalItem(UsedMedicalItemEventArgs ev)
 		{
 			if (Plugin.Singleton.Config.MedicalItem)
 			{

@@ -44,7 +44,7 @@ namespace DiscordIntegration_Plugin
             Handlers.Server.ReportingCheater += ServerEvents.OnCheaterReport;
 
             Handlers.Scp914.ChangingKnobSetting += PlayerEvents.On914KnobChange;
-            Handlers.Player.UsingMedicalItem += PlayerEvents.OnMedicalItem;
+            Handlers.Player.MedicalItemUsed += PlayerEvents.OnMedicalItem;
             Handlers.Scp079.InteractingTesla += PlayerEvents.On079Tesla;
             Handlers.Player.PickingUpItem += PlayerEvents.OnPickupItem;
             Handlers.Player.InsertingGeneratorTablet += PlayerEvents.OnGenInsert;
@@ -61,7 +61,7 @@ namespace DiscordIntegration_Plugin
             Handlers.Player.TriggeringTesla += PlayerEvents.OnTriggerTesla;
             Handlers.Player.ThrowingGrenade += PlayerEvents.OnGrenadeThrown;
             Handlers.Player.Hurting += PlayerEvents.OnPlayerHurt;
-            Handlers.Player.Died += PlayerEvents.OnPlayerDeath;
+            Handlers.Player.Dying += PlayerEvents.OnPlayerDeath;
             Handlers.Player.Banned += PlayerEvents.OnPlayerBanned;
             Handlers.Player.InteractingDoor += PlayerEvents.OnDoorInteract;
             Handlers.Player.InteractingElevator += PlayerEvents.OnElevatorInteraction;
@@ -106,7 +106,7 @@ namespace DiscordIntegration_Plugin
             Handlers.Server.ReportingCheater -= ServerEvents.OnCheaterReport;
 
             Handlers.Scp914.ChangingKnobSetting -= PlayerEvents.On914KnobChange;
-            Handlers.Player.UsingMedicalItem -= PlayerEvents.OnMedicalItem;
+            Handlers.Player.MedicalItemUsed -= PlayerEvents.OnMedicalItem;
             Handlers.Scp079.InteractingTesla -= PlayerEvents.On079Tesla;
             Handlers.Player.PickingUpItem -= PlayerEvents.OnPickupItem;
             Handlers.Player.InsertingGeneratorTablet -= PlayerEvents.OnGenInsert;
@@ -123,7 +123,7 @@ namespace DiscordIntegration_Plugin
             Handlers.Player.TriggeringTesla -= PlayerEvents.OnTriggerTesla;
             Handlers.Player.ThrowingGrenade -= PlayerEvents.OnGrenadeThrown;
             Handlers.Player.Hurting -= PlayerEvents.OnPlayerHurt;
-            Handlers.Player.Died -= PlayerEvents.OnPlayerDeath;
+            Handlers.Player.Dying -= PlayerEvents.OnPlayerDeath;
             Handlers.Player.Banned -= PlayerEvents.OnPlayerBanned;
             Handlers.Player.InteractingDoor -= PlayerEvents.OnDoorInteract;
             Handlers.Player.InteractingElevator -= PlayerEvents.OnElevatorInteraction;
